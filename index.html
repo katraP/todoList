@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="root">
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Todo list</title>
+	<link rel="stylesheet" href="css/main.css"/>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+</head>
+<body>
+	<div ng-controller="index" class="todo-wrap">
+		<h1 class="todo__title" todo-title></h1>
+		<input type="text" class="todo__field" add-item />
+		<ul class="todo-list">
+			<li ng-repeat="note in todo.currentValue" class="todo-list__item">
+				<span class="todo-list__state {{note.status}}"></span><span>{{note.title}}</span>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
