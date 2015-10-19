@@ -29,10 +29,10 @@
   vertical-align: middle;
   margin-right: 10px;
 }
-.todo-list__state.completed {
+.todo-list__state.complete {
   background-color: #5ef9af;
 }
-.todo-list__state.completed + span {
+.todo-list__state.complete + span {
   text-decoration: line-through;
 }
 .todo__title {
